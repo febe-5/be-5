@@ -19,20 +19,26 @@ getForm.addEventListener("submit", e => {
         let getDataApi = await fetch("https://634d3cccacb391d34a979eb9.mockapi.io/api/konsul/users")
         let getData = await getDataApi.json()
         getData.forEach(e => {
-            // Cek Data dari Api jika True Lanjut Masukkan Data
-            if (users.userEmail == e.email &&
-            users.userPassword == e.password){
-                //Memasukkan data api ke variabel Object UsersApi
-                usersApi = {
-                    userEmail : e.email,
-                    userPassword : e.password
-                } 
+            try {
+                 // Cek Data dari Api jika True Lanjut Masukkan Data
+                if (users.userEmail == e.email &&
+                users.userPassword == e.password){
+                    //Memasukkan data api ke variabel Object UsersApi
+                    usersApi = {
+                        userEmail : e.email,
+                        userPassword : e.password
+                    } 
+                }
+            } catch (error) {
+                console.log(error);
             }
+           
         });
 
         // Validasi jika data tidak kosong login berhasil
         if (usersApi != "") {
             alert("login Berhasil")
+            window.location.href = 'landingpage.html'
         } else {
         alert("login gagal")
         }
