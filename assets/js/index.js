@@ -2,23 +2,27 @@ const resultCarousel = document.getElementById("result-carousel");
 
 const fetchApi = async () => {
 	resultCarousel.innerHTML = "";
-	const fetching = await fetch(
-		"https://634d3cccacb391d34a979eb9.mockapi.io/api/konsul/psikolog"
-	);
-	const datas = await fetching.json();
+	try {
+		const fetching = await fetch(
+			"https://634d3cccacb391d34a979eb9.mockapi.io/api/konsul/psikolog"
+		);
+		const datas = await fetching.json();
 
-	let temp = 0;
+		let temp = 0;
 
-	datas.forEach((data) => {
-		if (data.pengalaman > 5) {
-			if (temp == 0) {
-				resultCarousel.innerHTML += tampilDataActive(data);
-				temp++;
-			} else {
-				resultCarousel.innerHTML += tampilData(data);
+		datas.forEach((data) => {
+			if (data.pengalaman > 5) {
+				if (temp == 0) {
+					resultCarousel.innerHTML += tampilDataActive(data);
+					temp++;
+				} else {
+					resultCarousel.innerHTML += tampilData(data);
+				}
 			}
-		}
-	});
+		});
+	} catch (error) {
+		console.log(error.message);
+	}
 };
 
 fetchApi();
