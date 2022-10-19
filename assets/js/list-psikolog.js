@@ -12,7 +12,7 @@ getDataPsikolog = async () => {
             <div class="card">
                 <div class="card-body">
                     <div class="text-center">
-                        <img src="user.png" width="100" height="100" class="rounded-circle" alt="${list.name}">
+                        <img src="assets/images/user.png" width="100" height="100" class="rounded-circle" alt="${list.name}">
                         <h5 class="mt-3 mb-1">${list.name}</h5>
                         <p class="m-2">${list.specialist}</p>
                         <a href="#" class="btn btn-sm btn-outline-primary" onClick="addDetail(${list.id})">Pilih</a>
