@@ -1,0 +1,22 @@
+.border-lg-end {
+	border-right: 1px solid #dee2e6;
+}
+
+@media screen and (max-width: 992px) {
+	.border-lg-end {
+		border-right: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.img-manual {
+		width: 50vw;
+		margin: auto;
+	}
+	.footer {
+		text-align: center !important;
+	}
+	.footer > div:nth-child(even) {
+		text-align: center !important;
+	}
+}
