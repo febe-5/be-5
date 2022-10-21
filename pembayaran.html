@@ -64,21 +64,21 @@
 						</div>
 					</div>
 					<div class="row text-center mt-4 border-bottom pb-3">
-						<h1>Rodhi, M.Psi., Psikolog</h1>
-						<h4>Spesialis Kecemasan dan Trauma</h4>
+						<h1 id="nama">Rodhi, M.Psi., Psikolog</h1>
+						<h4>Pengalaman <span id="pengalaman"></span> Tahun</h4>
 					</div>
-					<form>
+					<form action="payment.html">
 						<div class="row py-3 border-bottom align-items-center">
 							<div class="col-md-4 mb-2">
 								<label for="inputEmail3">Pilih Layanan</label>
 							</div>
 							<div class="col-md-8">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Open this select menu</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+								<select
+									required
+									class="form-select"
+									id="layanan"
+									aria-label="Default select example"
+								></select>
 							</div>
 						</div>
 						<div class="row py-3 border-bottom align-items-center">
@@ -86,12 +86,12 @@
 								<label for="inputEmail3">Pilih Jadwal</label>
 							</div>
 							<div class="col-md-8">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Open this select menu</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+								<select
+									required
+									class="form-select"
+									id="jadwal"
+									aria-label="Default select example"
+								></select>
 							</div>
 						</div>
 						<div class="row py-3 align-items-center">
@@ -99,13 +99,21 @@
 								<label for="inputEmail3">Pilih Metode Pembayaran</label>
 							</div>
 							<div class="col-md-8">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Open this select menu</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+								<select
+									required
+									class="form-select"
+									aria-label="Default select example"
+								>
+									<option value="Transfer" selected>Transfer Bank</option>
+									<option value="OVO">OVO</option>
+									<option value="Gopay">Gopay</option>
 								</select>
 							</div>
+						</div>
+						<div class="row text-center">
+							<p class="fw-semibold">
+								Total Harga = Rp. <span id="harga"></span>
+							</p>
 						</div>
 						<div class="d-grid gap-2 col-md-10 mt-3 mx-auto">
 							<button type="submit" class="btn btn-primary">Bayar</button>
@@ -123,7 +131,9 @@
 							<a class="text-primary h3 text-decoration-none">E-Konsul</a>
 						</div>
 						<div>
-							<a href="" class="btn btn-primary">Konsultasi Sekarang</a>
+							<a href="list-psikolog.html" class="btn btn-primary"
+								>Konsultasi Sekarang</a
+							>
 						</div>
 					</div>
 					<div class="col-md-4 text-end">
@@ -140,5 +150,6 @@
 
 		<script src="assets/js/autentikasi.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/pembayaran.js"></script>
 	</body>
 </html>
