@@ -15,7 +15,7 @@ getDataPsikolog = async () => {
                         <img src="assets/images/user.png" width="100" height="100" class="rounded-circle" alt="${list.name}">
                         <h5 class="mt-3 mb-1">${list.name}</h5>
                         <p class="m-2">${list.specialist}</p>
-                        <a href="detail-psikolog.html?id=${list.id}" class="btn btn-sm btn-outline-primary" onClick="addDetail(${list.id})">Pilih</a>
+                        <a href="detail-page.html?id=${list.id}" class="btn btn-sm btn-outline-primary" onClick="addDetail(${list.id})">Pilih</a>
                     </div>
                 </div>
             </div>
