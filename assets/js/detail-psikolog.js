@@ -16,8 +16,9 @@ const getDataPsikolog = async () => {
 	const response = await fetch(URL);
 	psikolog = await response.json();
 
-    psikolog.forEach(function(item) {
-        psikolog.splice(0,2);
+    psikolog.forEach(function(item, potong) {
+        potong = psikolog.length - 1;
+        psikolog.splice(psikolog[0], potong)
         console.log(item);
         detail.innerHTML = 
         `<div class="col-md-5 mb-5">
