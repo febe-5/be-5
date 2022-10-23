@@ -45,13 +45,3 @@ function showModal() {
 		document.getElementById("metode").value;
 	document.getElementById("zoom-modal").innerHTML = nama.innerHTML;
 }
-
-function bayar() {
-	let linkZoom = confirm(
-		"Pembayaran berhasil dilakukan, Silahkan klik link disamping."
-	);
-	if (linkZoom) {
-		window.location =
-			"https://us04web.zoom.us/j/2515990968?pwd=ZjBFTmFaSnhZbklCYTZ1MUxmK3hRZz09";
-	}
-}
