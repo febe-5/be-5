@@ -4,7 +4,7 @@ const url = "https://634d3cccacb391d34a979eb9.mockapi.io/api/konsul/psikolog";
 getDataPsikolog = async () => {
 	const response = await fetch(url);
 	const psikolog = await response.json();
-	console.log(psikolog);
+
 
 	psikolog.forEach((list) => {
 		listPsikolog.innerHTML += `
@@ -26,6 +26,9 @@ getDataPsikolog = async () => {
 
 getDataPsikolog();
 
+
 function addDetail(id) {
 	console.log(id);
 }
+
+
