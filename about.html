@@ -1,196 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>E-Konsul</title>
- 
-        <!-- bootstrap css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-light border-bottom">
-            <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#">E-Konsul</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 me-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="list-psikolog.html">Konsultasi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                    </ul>
-                    <a href="login.html" id="btn-login" class="btn btn-outline-primary"
-                        >Login</a
-                    >
-                    <button
-                        style="display: none"
-                        id="btn-logout"
-                        class="btn btn-outline-primary"
-                    >
-                        Logout
-                    </button>
-                </div>
-            </div>
-        </nav>
- 
-        <div class="container">
-            <div class="row my-5 align-items-center">
-                <div class="col-md-6 mb-5">
-                    <h1 class="opacity-75">Untuk Remaja yang lebih Sehat Mental</h1>
-                    <p class="fs-5 opacity-50">E-Konsul menghubungkan setiap orang yang ingin menemukan jalan keluar atas masalahnya dengan psikolog profesional</p>
-                </div>
-                <div class="col-md-6">
-                    <img
-                        src="assets/images/support.png"
-                        class="img-thumbnail"
-                        alt="hero-landing-page" width="500" height="500"
-                    />
-                </div>
-            </div>
-        </div>
-       
-        <div class="container-fluid border-top border-bottom bg-light mt-5 p-5">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="opacity-75">Siapa Kami?</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5 align-items-center">
-                    <div class="col-md-6 mb-3">
-                        <img
-                            src="assets/images/logo.svg"
-                            alt="logo-eKonsul"
-                            class="img-thumbnail"
-                        />
-                    </div>
-                    <div class="col-md-6">
-                        <p class="fw-semibold opacity-75">
-                            E-Konsul merupakan sebuah platform penyedia layanan konsultasi
-                            psikologi secara online bersama para psikolog terpercaya. Platform
-                            ini berfokus pada kesehatan mental para remaja. Hal ini
-                            dikarenakan permasalahan kesehatan mental para remaja meningkat
-                            dua kali lipat selama pandemi.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container p-5">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="opacity-75">Visi & Misi</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light border rounded p-3 mb-3 mt-5">
-                    <div class="col-md-12">
-                        <h4 class="opacity-75">Visi</h4>
-                        <p class="fw-semibold opacity-75">Cure the mental sickness before you known!</p>
-                    </div>
-                </div>
-                <div class="row bg-light border rounded p-3">
-                    <div class="col-md-12 ">
-                        <h4 class="opacity-75">Misi</h4>
-                        <p class="fw-semibold opacity-75">
-                            1. Memberi informasi bahwa penyakit mental bukanlah penyakit remeh
-                            <br/>
-                            2. Memberikan pelayanan dengan kenyamanan
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" style="background-image: url('/assets/images/gradient-background.jpg');">
-            <div class="container mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center px-5 mb-4">
-                        <div class="row mt-5 mb-3">
-                            <img src="/assets/images/psikolog.png" alt="Support" class="img-thumbnail" width="250" height="250">
-                        </div>
-                    </div>
-                    <div class="col-md-5 text-center">
-                        <div class="row mb-3">
-                            <h4 class="opacity-75">Yuk, Jadwalkan Sesi Konseling</h4>
-                            <h4 class="opacity-75">Online Pertamamu</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 bg-light border rounded p-3">
-                                <ol class="list-group text-start list-group-flush">
-                                    <li class="list-group-item bg-light">
-                                        1. Booking Cepat
-                                    </li>
-                                    <li class="list-group-item bg-light">
-                                        2. Praktis
-                                    </li>
-                                    <li class="list-group-item bg-light">
-                                        3. Terpercaya
-                                    </li>							
-                                </ol>
-                            </div>
-                            <div class="col-md-12 p-3">
-                                <a href="list-psikolog.html" class="btn btn-light"
-                                    >Konsultasi Sekarang</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</div>     
- 
-        <div class="container-fluid border-top bg-light p-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="mb-3">
-                            <a class="text-primary h3 text-decoration-none">E-Konsul</a>
-                        </div>
-                        <div>
-                            <a href="list-psikolog.html" class="btn btn-primary"
-                                >Konsultasi Sekarang</a
-                            >
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-end">
-                        <div class="mb-3">
-                            <p class="fs-5 fw-semibold">Bandung, Jawa Barat, Indonesia</p>
-                        </div>
-                        <div>
-                            <p>&copy; E-Konsul 2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- autentikasi script -->
-        <script src="assets/js/autentikasi.js"></script>
- 
-        <!-- bootstrap's script -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
- 
-        <!-- manual script -->
-        <script src="assets/js/index.js"></script>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>E-Konsul</title>
+
+		<!-- bootstrap css -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="assets/css/footer.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light border-bottom">
+			<div class="container">
+				<a class="navbar-brand fw-bold text-primary" href="#">E-Konsul</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 me-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="list-psikolog.html">Konsultasi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+					</ul>
+					<a href="login.html" id="btn-login" class="btn btn-outline-primary"
+						>Login</a
+					>
+					<button
+						style="display: none"
+						id="btn-logout"
+						class="btn btn-outline-primary"
+					>
+						Logout
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row my-5 align-items-center">
+				<div class="col-md-6 mb-5">
+					<h1 class="opacity-75">Untuk Remaja yang lebih Sehat Mental</h1>
+					<p class="fs-5 opacity-50">
+						E-Konsul menghubungkan setiap orang yang ingin menemukan jalan
+						keluar atas masalahnya dengan psikolog profesional
+					</p>
+				</div>
+				<div class="col-md-6">
+					<img
+						src="assets/images/support.png"
+						class="img-thumbnail"
+						alt="hero-landing-page"
+						width="500"
+						height="500"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid border-top border-bottom bg-light mt-5 p-5">
+			<div class="container">
+				<div class="row text-center">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="opacity-75">Siapa Kami?</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row my-5 align-items-center">
+					<div class="col-md-6 mb-3">
+						<img
+							src="assets/images/logo.svg"
+							alt="logo-eKonsul"
+							class="img-thumbnail"
+						/>
+					</div>
+					<div class="col-md-6">
+						<p class="fw-semibold opacity-75">
+							E-Konsul merupakan sebuah platform penyedia layanan konsultasi
+							psikologi secara online bersama para psikolog terpercaya. Platform
+							ini berfokus pada kesehatan mental para remaja. Hal ini
+							dikarenakan permasalahan kesehatan mental para remaja meningkat
+							dua kali lipat selama pandemi.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container p-5">
+			<div class="container">
+				<div class="row text-center">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="opacity-75">Visi & Misi</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row bg-light border rounded p-3 mb-3 mt-5">
+					<div class="col-md-12">
+						<h4 class="opacity-75">Visi</h4>
+						<p class="fw-semibold opacity-75">
+							Cure the mental sickness before you known!
+						</p>
+					</div>
+				</div>
+				<div class="row bg-light border rounded p-3">
+					<div class="col-md-12">
+						<h4 class="opacity-75">Misi</h4>
+						<p class="fw-semibold opacity-75">
+							1. Memberi informasi bahwa penyakit mental bukanlah penyakit remeh
+							<br />
+							2. Memberikan pelayanan dengan kenyamanan
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="container-fluid"
+			style="background-image: url('/assets/images/gradient-background.jpg')"
+		>
+			<div class="container mt-5">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center px-5 mb-4">
+						<div class="row mt-5 mb-3">
+							<img
+								src="/assets/images/psikolog.png"
+								alt="Support"
+								class="img-thumbnail"
+								width="250"
+								height="250"
+							/>
+						</div>
+					</div>
+					<div class="col-md-5 text-center">
+						<div class="row mb-3">
+							<h4 class="opacity-75">Yuk, Jadwalkan Sesi Konseling</h4>
+							<h4 class="opacity-75">Online Pertamamu</h4>
+						</div>
+						<div class="row">
+							<div class="col-md-12 bg-light border rounded p-3">
+								<ol class="list-group text-start list-group-flush">
+									<li class="list-group-item bg-light">1. Booking Cepat</li>
+									<li class="list-group-item bg-light">2. Praktis</li>
+									<li class="list-group-item bg-light">3. Terpercaya</li>
+								</ol>
+							</div>
+							<div class="col-md-12 p-3">
+								<a href="list-psikolog.html" class="btn btn-light"
+									>Konsultasi Sekarang</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid border-top bg-light p-5">
+			<div class="container">
+				<div class="row footer">
+					<div class="col-md-8 mb-3">
+						<div class="mb-3">
+							<a class="text-primary h3 text-decoration-none">E-Konsul</a>
+						</div>
+						<div>
+							<a href="list-psikolog.html" class="btn btn-primary"
+								>Konsultasi Sekarang</a
+							>
+						</div>
+					</div>
+					<div class="col-md-4 text-end">
+						<div class="mb-3">
+							<p class="fs-5 fw-semibold">Bandung, Jawa Barat, Indonesia</p>
+						</div>
+						<div>
+							<p>&copy; E-Konsul 2022</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- autentikasi script -->
+		<script src="assets/js/autentikasi.js"></script>
+
+		<!-- bootstrap's script -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>

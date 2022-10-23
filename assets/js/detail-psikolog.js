@@ -1,13 +1,13 @@
-let detail = document.getElementById("detail")
+let detail = document.getElementById("detail");
 
 let link = window.location.search;
-let params = new URLSearchParams(link)
-let id = params.get("id")
+let params = new URLSearchParams(link);
+let id = params.get("id");
 let psikolog;
 console.log(id);
 
-if(!id) {
-    window.location.href = 'list-psikolog.html';
+if (!id) {
+	window.location.href = "list-psikolog.html";
 }
 
 const URL = `https://634d3cccacb391d34a979eb9.mockapi.io/api/konsul/psikolog/${id}`;
@@ -16,7 +16,7 @@ const getDataPsikolog = async () => {
 	const response = await fetch(URL);
 	psikolog = await response.json();
 
-        detail.innerHTML += `<div class="col-md-5 mb-5">
+	detail.innerHTML += `<div class="col-md-5 mb-5">
         <div class="row">
             <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Hero logo"
                 class="img-fluid img-manual" />
@@ -46,12 +46,12 @@ const getDataPsikolog = async () => {
             <h6>Melayani Via : zoom</h6>
         </div>
         <div class="row py-3">
-            <h6>Jadwal Praktik : Senin & Jum'at</h6>
+            <h6>Jadwal Praktik : ${psikolog.schedule}</h6>
             <h6 class="mt-3 mb-4">Profil</h6>
             <p>
                 ${psikolog.Description}
             </p>
         </div>
-        </div>`
-}
-getDataPsikolog()
+        </div>`;
+};
+getDataPsikolog();
